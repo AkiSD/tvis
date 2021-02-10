@@ -1,0 +1,44 @@
+$(document).ready(function() {
+
+    $('.arrow_a').click(function(e) {
+        e.preventDefault();
+        var attrAr = $(this).attr('href');
+        var heightAr = $(attrAr).offset().top;
+        $('html').animate({
+            scrollTop: heightAr
+        }, 1000);
+    })
+
+
+
+
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() >= 500) {
+            $(".circle-up").css("opacity", 0.6);
+        } else {
+            $(".circle-up").css("opacity", 0);
+        }
+    });
+
+
+
+    $('.circle-up').click(function() {
+        $("html, body").animate({
+            scrollTop: $(".header").height() + -1000
+        }, 1000);
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
