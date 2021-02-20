@@ -40,5 +40,25 @@ $(document).ready(function() {
 
 
 
+    $('.header__bars').click(function() {
+        if ($('.header-menu').css('opacity') == '0') {
+            $('.header-menu').animate({
+                opacity: "1"
+            }, 1000);;
+            $('.fa-bars').removeClass('fa-bars');
+            $('.header__bars .fa').addClass('fa-times');
+        } else {
+            $('.header-menu').animate({
+                opacity: "0"
+            }, 1000);;
+            $('.fa-times').removeClass('fa-times');
+            $('.header__bars .fa').addClass('fa-bars');
+        }
+
+    });
+
+
+
+
 
 });
