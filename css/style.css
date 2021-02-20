@@ -9,7 +9,7 @@ body {
   font-family: 'Roboto';
   font-weight: normal;
   font-style: normal;
-  background: url('img/news-bg.png');
+  background: url("img/news-bg.png");
 }
 
 .container {
