@@ -61,4 +61,20 @@ $(document).ready(function() {
 
 
 
+
+    $('.area__name-tap').click(function(t) {
+        t.preventDefault();
+        let attrSud = $(this).attr('href');
+        $(attrSud).show('area__sud');
+        $('.area__close').click(function() {
+            $('.area__sud').hide();
+        });
+    })
+
+
+
+
+
+
+
 });
