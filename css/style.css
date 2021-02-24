@@ -1019,6 +1019,10 @@ body {
   overflow: scroll;
 }
 
+.area__sud__bg-content::-webkit-scrollbar {
+  width: 0;
+}
+
 .area__sud__bg-content__title {
   text-align: center;
   font-size: 24px;
@@ -1234,8 +1238,8 @@ body {
     width: 300px;
     padding: 60px 0;
     border-radius: 0 0 6px 0;
-    opacity: 0;
-    z-index: 99999;
+    display: none;
+    z-index: 9999;
   }
 
   .header-page-menu__li {

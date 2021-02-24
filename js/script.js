@@ -41,18 +41,14 @@ $(document).ready(function() {
 
 
     $('.header__bars').click(function() {
-        if ($('.header-menu').css('opacity') == '0') {
-            $('.header-menu').animate({
-                opacity: "1"
-            }, 1000);;
+        if ($('.header-menu').css('display') == 'none') {
+            $('.header-menu').show();
             $('.fa-bars').removeClass('fa-bars');
-            $('.header__bars .fa').addClass('fa-times');
+            $('.header .fa').addClass('fa-times');
         } else {
-            $('.header-menu').animate({
-                opacity: "0"
-            }, 1000);;
+            $('.header-menu').hide();
             $('.fa-times').removeClass('fa-times');
-            $('.header__bars .fa').addClass('fa-bars');
+            $('.header .fa').addClass('fa-bars');
         }
 
     });
