@@ -58,6 +58,20 @@ $(document).ready(function() {
     });
 
 
+    $('.header-page__bars').click(function() {
+        if ($('.header-page-menu').css('display') == 'none') {
+            $('.header-page-menu').show();
+            $('.fa-bars').removeClass('fa-bars');
+            $('.header-page__bars .fa').addClass('fa-times');
+        } else {
+            $('.header-page-menu').hide();
+            $('.fa-times').removeClass('fa-times');
+            $('.header-page__bars .fa').addClass('fa-bars');
+        }
+
+    });
+
+
 
 
 

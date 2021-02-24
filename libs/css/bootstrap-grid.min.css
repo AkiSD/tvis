@@ -29,25 +29,25 @@ html {
 }
 
 @media (min-width:576px) {
-    .container {
+    .containerr {
         max-width: 540px
     }
 }
 
 @media (min-width:768px) {
-    .container {
+    .containerr {
         max-width: 720px
     }
 }
 
 @media (min-width:992px) {
-    .container {
+    .containerr {
         max-width: 960px
     }
 }
 
 @media (min-width:1200px) {
-    .container {
+    .containerr {
         max-width: 1800px
     }
 }

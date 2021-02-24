@@ -24,13 +24,13 @@
         align-items: center;
         list-style: none;
         padding-top: 30px;
+        
         &__li {
-            .active {
-                color: rgb(177, 22, 22);
-            }
             &:not(:first-child) {
                 margin-left: 50px;
             }
+            
+            
             a {
                 color: @font-color;
                 text-decoration: none;
@@ -101,6 +101,7 @@
         margin: 0 auto 77px;
         justify-content: space-between;
         width: 100%;
+        
         .xl-block({
             text-align: center;
         });
@@ -111,14 +112,15 @@
             top: 0;
             text-align: left;
             margin: 0;
-            background: rgb(34, 67, 158);
+            background: rgb(30, 3, 150);
             width: 300px;
             padding: 60px 0;
             border-radius: 0 0 6px 0;
             opacity: 0;
+            z-index: 99999;
         });
         &__li {
-            list-style: none;         
+            list-style: none;       
                .lg-block({
                     margin: 30px 0 0 50px;
                 });
@@ -253,7 +255,6 @@
         .active {
             color: red;
         }
-
 
  }
 
