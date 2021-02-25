@@ -16,11 +16,21 @@
         img {
             width: 420px;
             height: 300px;
+            .lg-block({
+            margin: 0 auto;
+            });
         }
         &__flex {
             display: flex;
+            .lg-block({
+                flex-direction: column;
+            });
             &-2 {
                 margin-left: 20px;
+                .lg-block({
+                    text-align: center;
+                    margin-top: 30px;
+                });
                 &__title {
                     font-size: 20px;
                     font-weight: 700;
@@ -47,25 +57,6 @@
             }
         }
     }
-    // &__next {
-    //     width: 200px;
-    //     height: 50px;
-    //     border-radius: 6px;
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     background: rgb(165, 165, 165);
-    //     color: rgb(52, 11, 167);
-    //     text-transform: uppercase;
-    //     margin: 50px auto 0;
-    //     font-weight: 700;
-    //     transition: 1s;
-    //     &:hover {
-    //         box-shadow: 0px 0px 15px 8px rgba(0,0,0,0.67);
-    //     }
-
-    // }
-
 
         &__navigation {
             margin-top: 40px;
