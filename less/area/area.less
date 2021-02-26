@@ -4,8 +4,8 @@
         justify-content: space-around;
         align-items: center;
         margin: 40px auto 40px;
-        .lg-block({
-            
+        .md-block({
+            flex-direction: column;
         });
         a {
             display: flex;
@@ -18,6 +18,12 @@
             border-radius: 6px;
             border: 1px solid #000;
             color: #000;
+            .md-block({
+                &:not(:first-child) {
+                    margin-top: 20px;
+                }
+                
+            });
             cursor: pointer;
             :hover {
                 box-shadow: 0px 0px 15px 10px;
@@ -36,19 +42,10 @@
         display: none;
     }
 
-    .area__close {
-        .fa {
-            position: absolute;
-            font-size: 30px;
-            color: #fff;
-            left: 89%;
-            top: 77px;
-            z-index: 99999;
-            cursor: pointer;
-        }
-    }
+    
 
     &__sud {
+        
         
         
         &__bg {
@@ -81,6 +78,18 @@
                     text-align: center;
                     margin-top: 20px;
                     position: relative;
+                    .area__close {
+                        .fa {
+                            position: absolute;
+                            font-size: 30px;
+                            color: #fff;
+                            left: 95%;
+                            bottom: 100%;
+                            z-index: 99999;
+                            cursor: pointer;
+                        }
+                    }
+                    
                     ul {
                         margin: 0 auto;
                         width: 80%;

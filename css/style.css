@@ -707,6 +707,7 @@ body {
   margin-right: 15px;
   font-size: 26px;
   margin-top: 2px;
+  margin-bottom: 5px;
 }
 
 .sudi-blocks__block:hover {
@@ -988,16 +989,6 @@ body {
   display: none;
 }
 
-.area .area__close .fa {
-  position: absolute;
-  font-size: 30px;
-  color: #fff;
-  left: 89%;
-  top: 77px;
-  z-index: 99999;
-  cursor: pointer;
-}
-
 .area__sud__bg {
   width: 100%;
   min-height: 100%;
@@ -1032,6 +1023,16 @@ body {
   text-align: center;
   margin-top: 20px;
   position: relative;
+}
+
+.area__sud__bg-content__block-1 .area__close .fa {
+  position: absolute;
+  font-size: 30px;
+  color: #fff;
+  left: 95%;
+  bottom: 100%;
+  z-index: 99999;
+  cursor: pointer;
 }
 
 .area__sud__bg-content__block-1 ul {
@@ -1179,6 +1180,14 @@ body {
     text-align: center;
   }
 
+  .footer-info {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
   .rekvizit__subtitle {
     height: 120px;
   }
@@ -1248,6 +1257,16 @@ body {
     font-size: 60px;
   }
 
+  .sudi-blocks__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
   .footer-a__logo {
     margin: 0 auto;
   }
@@ -1278,10 +1297,15 @@ body {
   .circle-up {
     width: 40px;
     height: 40px;
+    left: 85%;
   }
 
   .circle-up .fa {
     font-size: 15px;
+  }
+
+  .header__bars {
+    left: 85%;
   }
 
   .header-info {
@@ -1292,6 +1316,10 @@ body {
     margin: 0 auto;
   }
 
+  .header-page__bars {
+    left: 85%;
+  }
+
   .header-page-info {
     display: none;
   }
@@ -1299,18 +1327,78 @@ body {
   .header-page-right {
     margin: 0 auto;
   }
-}
 
-@media (max-width: 576px) {
   .sudi-blocks__block {
     font-size: 16px;
-    width: 100px;
-    height: 120px;
+    padding: 20px;
+    height: 90px;
+  }
+
+  .sudi-blocks__block .fa {
+    font-size: 16px;
   }
 
   .sayti-blocks__block {
     font-size: 16px;
+    padding: 10px;
+  }
+
+  .footer-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .footer-info__li:not(:first-child) {
+    margin: 0;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .area__name {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .area__name a:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sudi-blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .sudi-blocks__block {
+    margin-top: 10px;
+    font-size: 18px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .sudi-blocks__block .fa {
+    font-size: 18px;
+  }
+
+  .sayti-blocks__block {
+    font-size: 14px;
     width: 100px;
-    height: 120px;
+    height: 100px;
+    padding: 10px;
   }
 }

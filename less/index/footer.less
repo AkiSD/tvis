@@ -8,6 +8,7 @@
     &__bg-black {
         padding: 10px 0;
     }   
+    
     &-a {
         display: inline-block;
         text-decoration: none;
@@ -68,12 +69,25 @@
         list-style: none;
         padding: 30px 0;
         margin: 0 auto;
+        .xl-block({
+            flex-wrap: wrap;
+            justify-content: center;
+        });
+        .md-block({
+            flex-direction: column;
+        });
         &__li {
             
 
             &:not(:first-child) {
                 margin-left: 50px;
+                .md-block({
+                    margin: 0;
+                    text-align: center;
+                    margin-top: 10px;
+                });
             }
+            
             a {
                 color: @font-color;
                 text-decoration: none;
